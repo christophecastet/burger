@@ -21,7 +21,7 @@ const burgerControls = (props) => {
                 label={ctrl.label} 
                 add={() => props.addIngredient(ctrl.type)}
                 less={() => props.lessIngredient(ctrl.type)}
-                
+                dislabled={props.disabled[ctrl.type]}
                 />
             })
         }
