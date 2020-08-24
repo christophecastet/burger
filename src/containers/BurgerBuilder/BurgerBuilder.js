@@ -104,7 +104,8 @@ class BurgerBuilder extends Component
                     <OrderSummary 
                          ingredients={this.state.ingredients}
                          cancelPurchasse={this.cancelPurchasing}
-                         continuePurchasse={this.continuePurchsing}/>
+                         continuePurchasse={this.continuePurchsing}
+                         totalprice={this.state.totalprice}/>
                 </Modale>
                 <Burger ingredients={this.state.ingredients}/>
                 <BurgerControls
@@ -120,3 +121,6 @@ class BurgerBuilder extends Component
 }
 
 export default BurgerBuilder
+
+
+
